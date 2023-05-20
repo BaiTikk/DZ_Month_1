@@ -1,0 +1,52 @@
+header
+  padding: 40px 0 32px 0
+
+.header_inner
+  width: 1152px
+  height: 48px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  h3
+    font-size: 24px
+  .menu_inner
+    width: 483px
+    ul
+      display: flex
+      justify-content: space-between
+      list-style: none
+      font-size: 16px
+      li
+        display: flex
+
+      li:not(:nth-child(5))::after
+        content: ""
+        display: block
+        background: url("../images/header/vector_black.svg") no-repeat center
+        width: 20px
+        height: 20px
+      li:hover:not(:nth-child(5))::after
+        content: ""
+        display: block
+        background: url("../images/header/vector_blue.svg") no-repeat center
+        width: 20px
+        height: 20px
+  .menu_inner ul li a
+    font-size: 16px
+    color: #222222
+    text-decoration: none
+  .menu_inner ul li a:hover
+      color: #086CF9
+.menu_btn
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 197px
+  font-size: 16px
+  .head1
+    font-size: 16px
+    text-decoration: none
+    color: #222222
+
+
+
